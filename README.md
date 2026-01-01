@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GPA Calculator & AI Study Timer
 
 A full-stack web application for calculating GPA and tracking study time with AI-powered insights.
@@ -139,3 +140,6 @@ The frontend will run on `http://localhost:3000`
 
 ISC
 
+=======
+# student-dashboard
+>>>>>>> e6a2d07aba2268b13e850a75082a9ebdb8c4d710
