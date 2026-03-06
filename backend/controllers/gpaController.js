@@ -1,4 +1,4 @@
-// GPA calculation logic matching: https://imshaheryar.byethost7.com/apps/gpa
+
 
 const calculateGPA = (req, res) => {
   try {
