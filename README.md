@@ -1,145 +1,151 @@
-<<<<<<< HEAD
-# GPA Calculator & AI Study Timer
+<div align="center">
 
-A full-stack web application for calculating GPA and tracking study time with AI-powered insights.
+# UBIT Smart GPA Calculator
+
+### AI-Powered GPA Calculation & Academic Recommendation System
+
+<p>
+  <a href="https://react.dev/">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="45" alt="React.js"/>
+  </a>
+  <a href="https://nodejs.org/">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="45" alt="Node.js"/>
+  </a>
+  <a href="https://expressjs.com/">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="45" alt="Express.js"/>
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45" alt="JavaScript"/>
+  </a>
+</p>
+
+<p>
+  React.js &nbsp; · &nbsp;
+  Node.js &nbsp; · &nbsp;
+  Express.js &nbsp; · &nbsp;
+  JavaScript &nbsp; · &nbsp;
+  REST API &nbsp; · &nbsp;
+  AI
+</p>
+
+</div>
+
+---
+
+## Overview
+
+**UBIT Smart GPA Calculator** is a full-stack web application designed to simplify GPA calculation for university students.
+
+The application allows students to enter their courses, credit hours, and grades to automatically calculate their semester GPA. It also provides AI-powered recommendations to help students better understand their academic performance.
+
+---
 
 ## Features
 
-- **GPA Calculator**: Calculate GPA for 2, 3, 4, 5, or 6 subjects with detailed grade breakdown
-- **Study Timer**: Pomodoro technique timer (25 min study, 5 min break)
-- **AI Insights**: Rule-based AI suggestions for academic improvement
-- **Study Analysis**: Track and analyze your study time patterns
-- **Modern UI**: Beautiful, responsive design with custom color scheme
+### GPA Calculation
 
-## Tech Stack
+- Add courses and credit hours
+- Select grades for each course
+- Automatically calculate grade points
+- Calculate semester GPA
+- Handle multiple courses and credit-hour combinations
 
-- **Frontend**: React, Tailwind CSS
-- **Backend**: Express.js, Node.js
-- **API**: RESTful APIs for GPA calculation and study analysis
+### AI-Powered Recommendations
 
-## Project Structure
+- Analyze calculated GPA
+- Provide personalized academic recommendations
+- Help students understand their academic performance
+- Generate useful suggestions based on GPA results
 
-```
-gpa-web/
-├── backend/
-│   ├── controllers/
-│   │   ├── gpaController.js
-│   │   └── studyController.js
-│   ├── routes/
-│   │   ├── gpa.js
-│   │   └── study.js
-│   ├── server.js
-│   └── package.json
-├── frontend/
-│   ├── public/
-│   │   └── images/
-│   │       └── university-building.jpg (your background image)
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Hero.js
-│   │   │   ├── Dashboard.js
-│   │   │   ├── GPACalculator.js
-│   │   │   ├── StudyTimer.js
-│   │   │   └── AISuggestions.js
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── index.css
-│   └── package.json
-└── README.md
-```
+### User Interface
 
-## Installation & Setup
+- Clean and intuitive interface
+- Responsive design
+- Interactive GPA calculation
+- Clear presentation of results
+- Optimized user experience
 
-### Backend Setup
+### Backend
 
-1. Navigate to the backend directory:
-```bash
-cd backend
-```
+- RESTful API architecture
+- GPA processing through backend services
+- Frontend-backend communication using APIs
+- Structured server-side logic
 
-2. Install dependencies:
-```bash
-npm install
-```
+---
 
-3. Create a `.env` file (optional, defaults are set):
-```
-PORT=5000
-NODE_ENV=development
-```
+## Technology Stack
 
-4. Start the server:
-```bash
-npm start
-# or for development with auto-reload:
-npm run dev
-```
+### Frontend
 
-The backend will run on `http://localhost:5000`
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" alt="React.js"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" alt="JavaScript"/>
+</p>
 
-### Frontend Setup
+**React.js**  
+Component-based frontend architecture and interactive UI.
 
-1. Navigate to the frontend directory:
-```bash
-cd frontend
-```
+**JavaScript**  
+Application logic, GPA calculations and client-side functionality.
 
-2. Install dependencies:
-```bash
-npm install
-```
+---
 
-3. Create a `.env` file (optional):
-```
-REACT_APP_API_URL=http://localhost:5000/api
-```
+### Backend
 
-4. Start the development server:
-```bash
-npm start
-```
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" alt="Node.js"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="40" alt="Express.js"/>
+</p>
 
-The frontend will run on `http://localhost:3000`
+**Node.js**  
+Server-side JavaScript runtime.
 
-## API Endpoints
+**Express.js**  
+RESTful API development and backend request handling.
 
-### GPA Endpoints
+---
 
-- `POST /api/gpa/calculate` - Calculate GPA
-  - Body: `{ subjects: [{ name: string, marks: number }] }`
-  - Returns: GPA, percentage, and subject details
+### API Communication
 
-- `POST /api/gpa/insights` - Get AI insights
-  - Body: `{ gpa: number, subjects: array }`
-  - Returns: Personalized insights and recommendations
+**REST APIs**  
+Used for communication between the React frontend and Node.js backend.
 
-### Study Endpoints
+---
 
-- `POST /api/study/analyze` - Analyze study time
-  - Body: `{ sessions: array }`
-  - Returns: Statistics and analysis
+### AI
 
-- `POST /api/study/suggestions` - Get study suggestions
-  - Body: `{ gpa: number, studyTime: number, weakSubjects: array }`
-  - Returns: Personalized study suggestions
+**AI Integration**  
+Used to generate academic recommendations based on GPA results.
 
-## Color Scheme
+> AI services can be configured through environment variables without exposing API credentials in the repository.
 
-- Cream: `#FEEAC9`
-- Pink Light: `#FFCDC9`
-- Pink: `#FDACAC`
-- Pink Dark: `#FD7979`
+---
 
-## Usage
+## Application Architecture
 
-1. **Calculate GPA**: Enter subject names and marks (2-4 subjects), then click "Calculate GPA"
-2. **Study Timer**: Use the Pomodoro timer to track focused study sessions
-3. **View Insights**: After calculating GPA or completing study sessions, view AI-powered insights and suggestions
-
-## License
-
-ISC
-
-=======
-# student-dashboard
->>>>>>> e6a2d07aba2268b13e850a75082a9ebdb8c4d710
+```text
+┌──────────────────────────┐
+│      React Frontend      │
+│                          │
+│  Course & Grade Input    │
+│  GPA Calculation UI      │
+│  Recommendation UI       │
+└────────────┬─────────────┘
+             │
+             │ REST API
+             ▼
+┌──────────────────────────┐
+│    Node.js + Express     │
+│                          │
+│    API Endpoints         │
+│    GPA Processing        │
+│    Business Logic        │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│      AI Integration      │
+│                          │
+│ Academic Recommendations │
+└──────────────────────────┘
